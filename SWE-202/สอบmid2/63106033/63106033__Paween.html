@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pippa Restaurant</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="box-sizing.css">
+	<link rel="stylesheet" href="fonts.css">
+</style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p>Pippa Restaurant</p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">Food Menu</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">Reserve a Table</button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">Open Monday - Friday | 10 am. - 11 pm.</p>
+    <p class="w3-large">MYTT Beach Hotel, Pattaya, Thailand</p>
+	<p class="w3-large">Paween Kaewthong | Tel.0816547259</p>
+  </div>
+</div>
+
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Starters</h1><h6>( อาหารเรียกน้ำย่อย) </h6>
+    </div>
+    <div class="w3-container">
+	  <h5>Shrimp Salad <h6>( สลัดกุ้ง )</h6> <b>$ 60</b></h5>
+	  <h5>Tomato Soup <h6>( ซุปมะเขือเทศ )</h6> <b>$ 70</b></h5>
+      <h5>Chicken Salad <h6>( สลัดไก่ )</h6><b>$ 60</b></h5>
+      <h5>Bread and Butter <h6>( ขนมปังและเนย )</h6><b>$ 30</b></h5>
+	  <h5>Seasoned Salmon <h6>( แซลมอนทรงเครื่อง )</h6> <b>$ 55</b></h5>
+	  
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Main Dish </h1><h6>(  อาหารจานหลัก )</h6> 
+    </div>
+    <div class="w3-container">
+      <h5>Shrimp Fried Rice <h6>( ข้าวผัดกุ้ง )</h6><b>$ 60 - 65</b></h5>
+	  <h5>Minced Pork with Basil <h6>( กะเพราหมูสับ )</h6><b>$ 60 - 65</b></h5>
+	  <h5>Stir Fried Pork with Curry Paste <h6>( ผัดพริกแกงหมู )</h6><b>$ 60 - 65</b></h5>
+	  <h5>Grilled Fish and Potatoes <h6>( ปลาย่างและมันฝรั่ง )</h6><b>$ 180</b></h5>
+	  <h5>Stir Fried Curry Powder <h6>( ผัดผงกะหรี่ )</h6><b>$ 65 - 70</b></h5>
+	  <h5>Garlic Fried Pork with Rice <h6>( ข้าวหมูทอดกระเทียม )</h6><b>$ 60 - 65</b></h5>
+	  <h5>Green Curry <h6>( แกงเขียวหวาน )</h6><b>$ 120 - 150</b></h5>
+	  <h5>Spicy Prawn Soup <h6>( ต้มยำกุ้ง )</h6><b>$ 120 - 150</b></h5>
+      <h5>Italian Pizza <h6>( พิซซ่าอิตาเลี่ยน )</h6><b>$ 180</b></h5>
+      <h5>Pasta<h6>( พาสต้า ) </h6><b>$ 130</b></h5>
+      <h5>Chicken and Potatoes <h6>( ไก่และมันฝรั่ง )</h6><b>$ 240</b></h5>
+      <h5>Burger <h6>(เบอร์เกอร์ )</h6><b>$ 120</b></h5>
+	  <h5>Rice <h6>( ข้าว )</h6><b>$ 40</b></h5>
+	  
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Desserts</h1><h6>(  ของหวาน )</h6>
+    </div>
+    <div class="w3-container">
+      <h5>Fruit Salad <h6>( สลัดผลไม้ )</h6><b>$ 50</b></h5>
+      <h5>Ice cream <h6>( ไอศกรีม  )</h6><b>$ 59</b></h5>
+      <h5>Chocolate Cake <h6>( ช็อคโกแลตเค้ก  )</h6><b>$ 180</b></h5>
+      <h5>Cheese <h6>( ชีส )</h6><b>$ 40</b></h5>
+    </div>
+  </div>
+</div>
+
+
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Reserve a Table</h1>
+    </div>
+    <div class="w3-container">
+      <p>Reserve a table, ask for today's special or just send us a message:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required="" name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required="" name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required="" name="date" value="2017-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required="" name="Message"></p>
+        <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+</body></html>

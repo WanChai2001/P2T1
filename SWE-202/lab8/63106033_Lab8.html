@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       {
+         box-sizing: border-box;
+       }
+       .header,.sp {
+			background-color: #cf3ab8;
+			color: #4d2c48;
+			padding: 15px;
+       }
+       .position {
+			float: left;
+			padding: 15px;
+			
+			
+       }
+      .exe::after {
+			content: "";
+			clear: both;
+			display: table;
+       }
+       .menu {
+			width: 30%;
+			
+       }
+       .content {
+			width: 75%;
+       }
+       .menu ul
+       {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			
+        }
+       .menu sc {
+			padding: 8px;
+			margin-bottom: 8px;
+			background-color: #0981e3;
+			color: #4d2c48;
+			
+			
+       }
+       .menu li:hover {
+			background-color: #09c2e3;
+			
+			
+       }
+		.font {
+			font-family: Courier New;
+		}
+    </style>
+  </head>
+  <body class="font">
+    <div class="header">
+      <h1>Menu</h1>
+    </div>
+    <div class="exe">
+      <div class="position menu">
+        <ul>
+			<li><a href="1.inline.html" target="iframe_a";>Inline</a></li>
+			<li><a href="2.internal.html" target="iframe_a">Internal</a></li>
+			<li><a href="3.external.html" target="iframe_a">External</a></li>
+        </ul>
+		
+      </div>
+      <div class="position content">
+        <p>
+          <iframe height="500px" width="100%" name="iframe_a" frameBorder="0"></iframe>
+        </p>
+      </div>
+    </div>
+    <div class="sp"></div>
+  </body>
+</html>
